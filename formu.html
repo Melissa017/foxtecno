@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+<body id="body1">
+
+    <h1 id="formu">Formulario</h1>
+
+    <form method="get">
+        Usuario:
+        <input pattern="[A-Za-z]{3,}" placeholder="Ingresa tu nombre" id="usuario" name="usu" required><br><br>
+        Contraseña:
+        <input type="password" placeholder="Contraseña" id="contraseña" name="cont" maxlength="6" required><br><br>
+        Email:
+        <input type="email" id="email" name="em" required><br><br>
+        Teléfono:
+        <input type="tel" id="numb" name="tel" placeholder="+54 15"><br><br>
+        <input type="submit" value="Enviar">
+        </form>
+   
+        <script type="text/javascript">
+           function iniciar(){
+               var usuario1=document.getElementById("usuario");
+               var email1=document.getElementById("email");
+               var cont1=document.getElementById("contraseña");
+               usuario1.addEventListener("input",validate,false);
+               email1.addEventListener("input",validate,false);
+               cont1.addEventListener("input",validate,false);
+               validate()
+           }
+           function validate(){
+               var usuario1=document.getElementById("usuario");
+               var email1=document.getElementById("email");
+               var cont1=document.getElementById("contraseña");
+               if(usuario1.value==''&& email1.value==''&& cont1.value==''){
+               var usuario1=document.getElementById("usuario");
+               var email1=document.getElementById("email");
+               var cont1=document.getElementById("contraseña");
+               usuario1.setCustomValidity("Ingrese un nombre");
+               usuario1.style.background='#FFFFFF';
+               email1.setCustomValidity("Ingrese un email");
+               email1.style.background='#FFFFFF';
+               cont1.setCustomValidity("Ingrese una contraseña");
+               cont1.style.background='#FFFFFF ';
+               }else{
+               usuario1.setCustomValidity("");
+               usuario1.style.background='#93F8C1';
+               email1.setCustomValidity("");
+               email1.style.background='#F8CA93';
+               cont1.setCustomValidity("");
+               cont1.style.background='#B193F8';
+               }
+           }
+           window.addEventListener("load", iniciar, false);
+         </script>
+</body>
+</html>

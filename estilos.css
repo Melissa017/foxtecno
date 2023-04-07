@@ -1,0 +1,82 @@
+#ev{
+    background-image: url(paris.jpg);
+    text-align: center;
+}
+header{
+    background-image: url(fondojs.webp);
+    width: 750px;
+    height: 250px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+article{
+    width: 750px;
+    height: 550px;
+}
+section{
+    opacity: 1.0;
+    width: 750px;
+    height: 930px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    background-image: url(footer2js...jpg);
+    width: 750px;
+    height: 180px;
+    text-align: center;
+    line-height: 180px;
+    font-family: 'Crimson Text', serif;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+ul li{
+    display: inline;
+}
+li a{
+    width: 200px;
+    height: 100px;
+    background-color: salmon;
+    margin-bottom: 0px;
+    display: inline-block;
+    color: black;
+    border: 3px black solid;
+    text-align: center;
+    text-decoration: none;
+    line-height: 100px;
+}
+#titulo{
+    font-family: 'EB Garamond', serif;
+    line-height: 250px;
+}
+#tit{
+    font-family: 'Nanum Myeongjo', serif;
+}
+#depor{
+    font-family: 'Raleway', sans-serif;
+}
+#his{
+    font-family: 'Raleway', sans-serif;
+}
+#cine{
+    font-family: 'Raleway', sans-serif;
+}
+#formu{
+    font-family: 'Raleway', sans-serif;
+}
+#body{
+    background-image: url(posfondojs.jpg);
+}
+#body2{
+    background-image: url(morado2.jpg);
+}
+#body3{
+    background-image: url(luces2.jpg);
+}
+#body1{
+    background-image: url(acuarela2.jpg);
+}

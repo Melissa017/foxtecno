@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Historia</title>
+</head>
+<body id="body">
+    <h1 id="his">Historia</h1>
+      <form>
+         <input type="button" value="Resultados" onclick="Resultados([piramide , presidente , luna])">
+      </form>
+    <script>
+        var piramide = prompt("¿Cómo se llama la pirámide más grande de Egipto?");
+        var presidente = prompt("¿Quién fue el presidente que reinstaló la democracia en la Argentina después de la Dictadura Militar?");
+        var luna = prompt("¿En qué año el hombre pisó la luna?");
+
+        function Resultados([piramide , presidente , luna]){
+            if(piramide == "Keops"){
+            document.write("1_Respuesta correcta \n");
+        } else{
+            document.write("1_Respuesta incorrecta: Keops \n");
+        }
+
+        if(presidente == "Raúl Alfonsín"){
+            document.write("2_Respuesta correcta \n");
+        } else{
+            document.write("2_Respuesta incorrecta: Raúl Alfonsín \n");
+        }
+
+        if(luna == "1969"){
+            document.write("3_Respuesta correcta \n");
+        } else{
+            document.write("3_Respuesta incorrecta: 1969 \n");
+        }
+        }
+    </script>
+</body>
+</html>
